@@ -1,51 +1,59 @@
-// src/components/Footer.js
 import React from "react";
 
 const Footer = () => {
   return (
-    <footer >
-      <div className="w-full bg-[#381F73] px-4 text-white pt-8 pb-8 flex flex-col  md:flex-row md:flex-wrap justify-between md:px-12">
-      <div>
-        <h2 className="font-bold text-lg mt-4">Teams</h2>
-        <div className="text-md gap-2">
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Lyca Kovai Kings</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Nellai Royal Kings</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Chepauk Super Gillies</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Dindigul Dragons</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">
-          Siechem Madurai Panthers</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Idream Tiruppur Tamizhans</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Trichy Grand Cholas</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">SKM Salem Spartans</p>
+    <footer className='bg-footercol text-white py-10 font-roboto overflow-hidden scroll-m-0 '>
+      <div className='container mx-auto px-10'>
+        <div className='grid grid-cols-4 gap-8'>
+          {/* Teams */}
+          <div>
+            <h3 className='text-xl font-bold mb-4'>Teams</h3>
+            <ul className='space-y-2 cursor-pointer'>
+              <li className='hover:text-hoverYellow'>Lyca Kovai Kings</li>
+              <li className='hover:text-hoverYellow'>Nellai Royal Kings</li>
+              <li className='hover:text-hoverYellow'>Chepauk Super Gillies</li>
+              <li className='hover:text-hoverYellow'>Dindigul Dragons</li>
+              <li className='hover:text-hoverYellow'>Siechem Madurai Panthers</li>
+              <li className='hover:text-hoverYellow'>Idream Tiruppur Tamizhans</li>
+              <li className='hover:text-hoverYellow'>Trichy Grand Cholas</li>
+              <li className='hover:text-hoverYellow'>SKM Salem Spartans</li>
+            </ul>
+          </div>
+
+          {/* Latest Updates */}
+          <div>
+            <h3 className='text-xl font-bold mb-4'>Latest Updates</h3>
+            <ul className='space-y-2 cursor-pointer'>
+              <li className='hover:text-hoverYellow'>Videos</li>
+              <li className='hover:text-hoverYellow'>Photos</li>
+              <li className='hover:text-hoverYellow'>News</li>
+            </ul>
+          </div>
+
+          {/* Guidelines */}
+          <div>
+            <h3 className='text-xl font-bold mb-4'>Guidelines</h3>
+            <ul className='space-y-2 cursor-pointer'>
+              <li className='hover:text-hoverYellow'>TNPL Code Of Conduct</li>
+              <li className='hover:text-hoverYellow'>Governing Council</li>
+              <li className='hover:text-hoverYellow'>Anti Corruption Policy</li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className='text-xl font-bold mb-4'>Contact</h3>
+            <ul className='space-y-2 cursor-pointer'>
+              <li className='hover:text-hoverYellow'>Contact Us</li>
+              <li className='hover:text-hoverYellow'>Privacy Policy</li>
+              <li className='hover:text-hoverYellow'>Terms Of Use</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div>
-        <h2 className="font-bold text-lg mt-4">Latest Updates</h2>
-        <div className="text-md gap-2 ">
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Videos</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Photos</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">News</p>
-        </div>
+      <div className=' w-full  mt-16'>
+        <p className='text-center font-semibold'>Copyright © TNPL 2024 All Rights Reserved.</p>
       </div>
-      <div>
-        <h2 className="font-bold text-lg mt-4 ">Guidelines</h2>
-        <div className="text-md gap-2 pt-3">
-          <p className="hover:text-yellow-600 cursor-pointer ">TNPL Code of Conduct</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Governing Council</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Anti Corruption Policy</p>
-         
-        </div>
-      </div>
-      <div>
-        <h2 className="font-bold text-lg mt-4">Contact</h2>
-        <div className="text-md gap-2">
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Contact Us</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Privacy Policy</p>
-          <p className="hover:text-yellow-600 cursor-pointer pt-2">Terms of Use</p>
-        </div>
-      </div>
-      </div>
-      <div className="bg-[#32176A] w-full h-[50px] text-center text-white text-sm flex items-center justify-center">Copyright © TNPL 2024 All Rights Reserved</div>
     </footer>
   );
 };
