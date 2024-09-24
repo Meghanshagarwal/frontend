@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Header from './Header';
-import About from './Components/About';
-import Footer from './Components/Footer';
-import Sponser from './Components/Sponser';
-import Teams from './Components/Teams';
-import Home from './Components/Home';
+import About from './About';
+import Footer from './Footer';
+import Sponser from './Sponser';
+import Teams from './Teams';
+import Home from './Home';
 
 
 function App() {
